@@ -34,7 +34,7 @@ public:
 };
 
 template<typename T> auto all(T&& arg) {
-	if constexpr (std::ranges::view<std::remove_cvref_t<T> >) {
+	if constexpr (std::ranges::view<std::remove_cvref_t<T> >) { // forwarding reference로 받았으니까 참조가 있을 수도 있음 -> const volatile reference 제거
 		std::cout << "view" << std::endl;
 		// 복사본 반환
 		return std::remove_cvref_t<T>(arg);
