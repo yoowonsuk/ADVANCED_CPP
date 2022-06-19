@@ -23,7 +23,7 @@ template<typename T> class reverse_view : public std::ranges::view_base
 	T rng;
 public:
 	reverse_view() = default;
-	reverse_view(T& r) : rng(r) {}
+	reverse_view(T& r) : rng(r) {} // reverse_view(T r)
 
 	auto begin() { return std::make_reverse_iterator(rng.end()); }
 	auto end() { return std::make_reverse_iterator(rng.begin()); }
