@@ -79,7 +79,6 @@ public:
 
         // sz bit 만큼 할당... new int[sz/sizeof(int)]
         // ax => std::allocator<bool> => std::allocator<int>
-        // bool -> int 코드 완성은 안 했음.
         buff = std::allocator_traits<Alloc2>::allocate(ax, sz / sizeof(int) + 1);
        
         // buff 비트 초기화
