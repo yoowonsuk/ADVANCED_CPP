@@ -15,3 +15,5 @@ int main() {
 
 	std::cout << *p << std::endl;
 }
+
+// advance 구현방법 1. tag_dispatch(c++98) 2. enable_if(c++11) 3. if constexpr(c++17) 4. concept & requires clauses(c++20 이후)
