@@ -23,7 +23,7 @@ public:
 	*/
 };
 
-// 수정 안 했음
+// 수정 안 했음, 해야함
 template<typename T> class reverse_view {
 	std::ranges::ref_view<T> rng;
 public:
