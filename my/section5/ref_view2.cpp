@@ -22,6 +22,7 @@ public:
 	*/
 };
 
+// reverse_view 는 수정 안 했음
 template<typename T> class reverse_view {
 	T& rng;
 public:
