@@ -1,0 +1,10 @@
+최종 14번 정답 ref_view
+view_interface는 view를 만들 때 기본 함수들을 제공하기 위한 기반 클래스(CRTP)
+take_view는 새로운 시각 제공 (범위를 줄인다든지)
+
+
+중간 2번
+대입연산자 오른쪽에 있을 때(read) 왼쪽에 있을 때(write)에 대한 구분을 해야 함
+나는 참조계수에 대한 구분으로 문제를 풀어나갔음
+
+* vector #5 의 "temporary proxy" 기술을 사용하시면 됩니다.
